@@ -72,4 +72,25 @@ public class WeaponManager : MonoBehaviour
                 armControllers[i].ChangeToOneHand();
         }
     }
+
+    public void Attack()
+    {
+        if (currentTypeControl == TypeControlAttack.Hold)
+        {
+            currentWeapon.CallAttack();
+        }
+        else if (currentTypeControl == TypeControlAttack.Click)
+        {
+            if (!isShooting)
+            {
+                currentWeapon.CallAttack();
+                isShooting = true;
+            }
+        }
+    }
+
+    public void ResetAttack()
+    {
+        isShooting = false;
+    }
 }

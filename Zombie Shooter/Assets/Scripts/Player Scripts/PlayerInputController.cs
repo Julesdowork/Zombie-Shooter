@@ -22,5 +22,20 @@ public class PlayerInputController : MonoBehaviour
     {
         if (Input.GetKeyDown(KeyCode.Q))
             weaponManager.SwitchWeapon();
+
+        if (Input.GetKey(KeyCode.F))
+        {
+            isHoldAttack = true;
+        }
+        else
+        {
+            weaponManager.ResetAttack();
+            isHoldAttack = false;
+        }
+
+        if (isHoldAttack && canShoot)
+        {
+            weaponManager.Attack();
+        }
     }
 }
