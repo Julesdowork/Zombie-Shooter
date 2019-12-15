@@ -1016,6 +1016,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 00bc10ff5ec117b429fc29e7d1504c38, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  canShoot: 0
 --- !u!1 &1966007364148674
 GameObject:
   m_ObjectHideFlags: 0
@@ -1202,9 +1203,11 @@ MonoBehaviour:
   currentAmmo: 0
   magazineSize: 160
   spawnPoint: {fileID: 1792110079}
-  bulletPrefab: {fileID: 0}
+  bulletPrefab: {fileID: 8250118411194453154, guid: 3ac485f9b29d1c44b9a48032874a37cd,
+    type: 3}
   shootFX: {fileID: 198614469983900532}
-  bulletFallFX: {fileID: 0}
+  bulletFallFXPrefab: {fileID: 6090158551179947475, guid: ee3732097dab309419a41d0615fc038b,
+    type: 3}
 --- !u!1 &1870851352819190149
 GameObject:
   m_ObjectHideFlags: 0
@@ -1310,9 +1313,11 @@ MonoBehaviour:
   currentAmmo: 0
   magazineSize: 20
   spawnPoint: {fileID: 1792110079}
-  bulletPrefab: {fileID: 0}
+  bulletPrefab: {fileID: 8250118411194453154, guid: 3ac485f9b29d1c44b9a48032874a37cd,
+    type: 3}
   shootFX: {fileID: 198614469983900532}
-  bulletFallFX: {fileID: 0}
+  bulletFallFXPrefab: {fileID: 6090158551179947475, guid: ee3732097dab309419a41d0615fc038b,
+    type: 3}
 --- !u!1 &2094916362323377627
 GameObject:
   m_ObjectHideFlags: 0
@@ -1418,9 +1423,11 @@ MonoBehaviour:
   currentAmmo: 0
   magazineSize: 10
   spawnPoint: {fileID: 1550578801}
-  bulletPrefab: {fileID: 0}
+  bulletPrefab: {fileID: 359363369047626305, guid: 545466542443a5945af7ab1dc7dc4687,
+    type: 3}
   shootFX: {fileID: 198882520106672019}
-  bulletFallFX: {fileID: 0}
+  bulletFallFXPrefab: {fileID: 6090158551179947475, guid: ee3732097dab309419a41d0615fc038b,
+    type: 3}
 --- !u!1 &3162857127636105401
 GameObject:
   m_ObjectHideFlags: 0
@@ -1558,9 +1565,11 @@ MonoBehaviour:
   currentAmmo: 0
   magazineSize: 210
   spawnPoint: {fileID: 1550578801}
-  bulletPrefab: {fileID: 0}
+  bulletPrefab: {fileID: 8250118411194453154, guid: 3ac485f9b29d1c44b9a48032874a37cd,
+    type: 3}
   shootFX: {fileID: 198882520106672019}
-  bulletFallFX: {fileID: 0}
+  bulletFallFXPrefab: {fileID: 6090158551179947475, guid: ee3732097dab309419a41d0615fc038b,
+    type: 3}
 --- !u!1 &5154316075511342667
 GameObject:
   m_ObjectHideFlags: 0
@@ -1668,7 +1677,7 @@ MonoBehaviour:
   spawnPoint: {fileID: 1772997283}
   bulletPrefab: {fileID: 0}
   shootFX: {fileID: 198505394876684736}
-  bulletFallFX: {fileID: 0}
+  bulletFallFXPrefab: {fileID: 0}
 --- !u!1 &5383528397807287706
 GameObject:
   m_ObjectHideFlags: 0
@@ -1958,9 +1967,11 @@ MonoBehaviour:
   currentAmmo: 0
   magazineSize: 120
   spawnPoint: {fileID: 1550578801}
-  bulletPrefab: {fileID: 0}
+  bulletPrefab: {fileID: 8250118411194453154, guid: 3ac485f9b29d1c44b9a48032874a37cd,
+    type: 3}
   shootFX: {fileID: 198882520106672019}
-  bulletFallFX: {fileID: 0}
+  bulletFallFXPrefab: {fileID: 6090158551179947475, guid: ee3732097dab309419a41d0615fc038b,
+    type: 3}
 --- !u!1 &8700140564839582076
 GameObject:
   m_ObjectHideFlags: 0
@@ -2066,9 +2077,11 @@ MonoBehaviour:
   currentAmmo: 0
   magazineSize: 15
   spawnPoint: {fileID: 1792110079}
-  bulletPrefab: {fileID: 0}
+  bulletPrefab: {fileID: 8250118411194453154, guid: 3ac485f9b29d1c44b9a48032874a37cd,
+    type: 3}
   shootFX: {fileID: 198614469983900532}
-  bulletFallFX: {fileID: 0}
+  bulletFallFXPrefab: {fileID: 6090158551179947475, guid: ee3732097dab309419a41d0615fc038b,
+    type: 3}
 --- !u!1001 &896651887
 PrefabInstance:
   m_ObjectHideFlags: 0
