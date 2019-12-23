@@ -8,7 +8,7 @@ public class SmartPool : MonoBehaviour
 
     private List<GameObject> bulletFallFX = new List<GameObject>();
     private List<GameObject> bulletPrefabs = new List<GameObject>();
-    private List<GameObject> rocketMisslePrefabs = new List<GameObject>();
+    private List<GameObject> rocketMissilePrefabs = new List<GameObject>();
 
 
     void Awake()
@@ -41,8 +41,8 @@ public class SmartPool : MonoBehaviour
         for (int i = 0; i < count; i++)
         {
             GameObject tempRocket = Instantiate(rocket);
-            rocketMisslePrefabs.Add(tempRocket);
-            rocketMisslePrefabs[i].SetActive(false);
+            rocketMissilePrefabs.Add(tempRocket);
+            rocketMissilePrefabs[i].SetActive(false);
         }
     }
 
@@ -76,6 +76,7 @@ public class SmartPool : MonoBehaviour
                     bulletPrefabs[i].transform.rotation = rot;
 
                     // GET THE BULLET SCRIPT
+                    bulletPrefabs[i].GetComponent<BulletController>().SetDirection(dir);
 
                     // SET THE BULLET DAMAGE
 
@@ -85,15 +86,16 @@ public class SmartPool : MonoBehaviour
         }
         else
         {
-            for (int i = 0; i < rocketMisslePrefabs.Count; i++)
+            for (int i = 0; i < rocketMissilePrefabs.Count; i++)
             {
-                if (!rocketMisslePrefabs[i].activeInHierarchy)
+                if (!rocketMissilePrefabs[i].activeInHierarchy)
                 {
-                    rocketMisslePrefabs[i].SetActive(true);
-                    rocketMisslePrefabs[i].transform.position = pos;
-                    rocketMisslePrefabs[i].transform.rotation = rot;
+                    rocketMissilePrefabs[i].SetActive(true);
+                    rocketMissilePrefabs[i].transform.position = pos;
+                    rocketMissilePrefabs[i].transform.rotation = rot;
 
                     // GET THE BULLET SCRIPT
+                    rocketMissilePrefabs[i].GetComponent<BulletController>().SetDirection(dir);
 
                     // SET THE BULLET DAMAGE
 
