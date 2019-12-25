@@ -365,11 +365,11 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 1940654426450688, guid: a391c3a6825c4834e902a9803ffa0887, type: 3}
       propertyPath: m_IsActive
-      value: 0
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 4668976323760658, guid: a391c3a6825c4834e902a9803ffa0887, type: 3}
       propertyPath: m_LocalPosition.x
-      value: 0
+      value: -3.78
       objectReference: {fileID: 0}
     - target: {fileID: 4668976323760658, guid: a391c3a6825c4834e902a9803ffa0887, type: 3}
       propertyPath: m_LocalPosition.y
@@ -546,10 +546,6 @@ PrefabInstance:
       propertyPath: m_Name
       value: BigZombie
       objectReference: {fileID: 0}
-    - target: {fileID: 184972, guid: 13c9a6f4002c04238b8cb1551b68a561, type: 3}
-      propertyPath: m_IsActive
-      value: 0
-      objectReference: {fileID: 0}
     - target: {fileID: 463194, guid: 13c9a6f4002c04238b8cb1551b68a561, type: 3}
       propertyPath: m_LocalPosition.x
       value: 4.019645
@@ -580,7 +576,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 463194, guid: 13c9a6f4002c04238b8cb1551b68a561, type: 3}
       propertyPath: m_RootOrder
-      value: 1
+      value: 2
       objectReference: {fileID: 0}
     - target: {fileID: 463194, guid: 13c9a6f4002c04238b8cb1551b68a561, type: 3}
       propertyPath: m_LocalEulerAnglesHint.x

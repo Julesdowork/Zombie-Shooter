@@ -34179,6 +34179,9 @@ GameObject:
   - component: {fileID: 9502980}
   - component: {fileID: 5022798}
   - component: {fileID: 6103356}
+  - component: {fileID: 184799518}
+  - component: {fileID: 184799519}
+  - component: {fileID: 184799520}
   m_Layer: 9
   m_Name: BigZombie
   m_TagString: Enemy
@@ -34270,6 +34273,46 @@ BoxCollider2D:
   serializedVersion: 2
   m_Size: {x: 1, y: 0.22}
   m_EdgeRadius: 0
+--- !u!114 &184799518
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 184972}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 013f4b07cc7bf77489d45d7bfe6b6d59, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+--- !u!114 &184799519
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 184972}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: edfea6cce85d4634fb0de2f9b002c1e5, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  damageCollider: {fileID: 0}
+  fxDead: []
+  coinCollectable: {fileID: 0}
+  health: 10
+--- !u!114 &184799520
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 184972}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: cb28cfd5866ecee48aedc450a2ebcc70, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &187212
 GameObject:
   m_ObjectHideFlags: 0
