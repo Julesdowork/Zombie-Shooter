@@ -302,10 +302,6 @@ PrefabInstance:
       propertyPath: m_Name
       value: Tommy
       objectReference: {fileID: 0}
-    - target: {fileID: 1940654426450688, guid: a391c3a6825c4834e902a9803ffa0887, type: 3}
-      propertyPath: m_IsActive
-      value: 1
-      objectReference: {fileID: 0}
     - target: {fileID: 4668976323760658, guid: a391c3a6825c4834e902a9803ffa0887, type: 3}
       propertyPath: m_LocalPosition.x
       value: -3.78

@@ -10,6 +10,7 @@ TagManager:
   - RocketMissile
   - Bullet
   - Fence
+  - FireBullet
   layers:
   - Default
   - TransparentFX

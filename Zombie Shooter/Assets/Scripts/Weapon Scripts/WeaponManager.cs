@@ -6,9 +6,10 @@ public class WeaponManager : MonoBehaviour
 {
     public List<WeaponController> weaponsUnlocked;
     public WeaponController[] totalWeapons;
-
     [HideInInspector]
     public WeaponController currentWeapon;
+
+    public GameObject meleeDamagePoint;
 
     private int currentWeaponIndex;
     private TypeControlAttack currentTypeControl;
@@ -92,5 +93,15 @@ public class WeaponManager : MonoBehaviour
     public void ResetAttack()
     {
         isShooting = false;
+    }
+
+    public void AllowCollisionDetection()
+    {
+        meleeDamagePoint.SetActive(true);
+    }
+
+    public void DenyCollisionDetection()
+    {
+        meleeDamagePoint.SetActive(false);
     }
 }

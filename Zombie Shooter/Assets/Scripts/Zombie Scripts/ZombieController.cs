@@ -70,6 +70,18 @@ public class ZombieController : MonoBehaviour
 
             collision.gameObject.SetActive(false);
         }
+
+        if (collision.CompareTag(TagManager.FIRE_BULLET_TAG))
+        {
+            anim.Hurt();
+            health -= fireDamage;
+            if (health <= 0)
+            {
+                alive = false;
+                anim.Dead();
+                StartCoroutine(DeactivateZombie());
+            }
+        }
     }
 
     void OnTriggerExit2D(Collider2D collision)
@@ -115,6 +127,20 @@ public class ZombieController : MonoBehaviour
         if (fxDead[index].GetComponent<ParticleSystem>())
         {
             fxDead[index].GetComponent<ParticleSystem>().Play();
+        }
+    }
+
+    public void DealDamage(int damage)
+    {
+        anim.Hurt();
+        health -= damage;
+
+        if (health <= 0)
+        {
+            alive = false;
+            anim.Dead();
+
+            StartCoroutine(DeactivateZombie());
         }
     }
 }
