@@ -8,10 +8,18 @@ public class GameplayController : MonoBehaviour
 
     [HideInInspector]
     public bool bulletAndBulletFXCreated, rocketMissileCreated;
+    [HideInInspector]
+    public bool playerAlive;
 
     void Awake()
     {
-        if (instance == null) { instance = this; }
+        if (instance == null)
+            instance = this;
+    }
+
+    void Start()
+    {
+        playerAlive = true;
     }
 
     void OnDisable()

@@ -100,7 +100,7 @@ public class ZombieController : MonoBehaviour
         {
             if (Vector3.Distance(target.position, transform.position) > 1.5f)
             {
-                //movement.Move(target);
+                movement.Move(target);
             }
             else
             {
@@ -142,5 +142,15 @@ public class ZombieController : MonoBehaviour
 
             StartCoroutine(DeactivateZombie());
         }
+    }
+
+    public void ActivateDamagePoint()
+    {
+        damageCollider.SetActive(true);
+    }
+
+    public void DeactivateDamagePoint()
+    {
+        damageCollider.SetActive(false);
     }
 }

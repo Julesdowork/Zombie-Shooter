@@ -277,6 +277,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   bulletAndBulletFXCreated: 0
   rocketMissileCreated: 0
+  playerAlive: 0
 --- !u!4 &567151474
 Transform:
   m_ObjectHideFlags: 0
@@ -345,6 +346,11 @@ PrefabInstance:
     - target: {fileID: 4668976323760658, guid: a391c3a6825c4834e902a9803ffa0887, type: 3}
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4618608169112104622, guid: a391c3a6825c4834e902a9803ffa0887,
+        type: 3}
+      propertyPath: health
+      value: 10
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: a391c3a6825c4834e902a9803ffa0887, type: 3}

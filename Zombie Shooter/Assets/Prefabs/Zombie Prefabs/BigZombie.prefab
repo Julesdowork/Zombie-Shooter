@@ -34297,7 +34297,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: edfea6cce85d4634fb0de2f9b002c1e5, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  damageCollider: {fileID: 0}
+  damageCollider: {fileID: 1852009596050652}
   fxDead:
   - {fileID: 178502}
   - {fileID: 191432}
@@ -48939,6 +48939,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 4640115041625994}
+  - component: {fileID: 6078070936168165670}
   m_Layer: 0
   m_Name: Damage Point
   m_TagString: Untagged
@@ -48960,3 +48961,20 @@ Transform:
   m_Father: {fileID: 495206}
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &6078070936168165670
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1852009596050652}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 19d75da76d96ffc48865588308b75298, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  collisionLayer:
+    serializedVersion: 2
+    m_Bits: 2048
+  radius: 1
+  damage: 3
