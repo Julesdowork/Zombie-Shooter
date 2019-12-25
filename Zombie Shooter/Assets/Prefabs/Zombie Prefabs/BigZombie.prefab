@@ -24277,7 +24277,7 @@ GameObject:
   m_Component:
   - component: {fileID: 435110}
   - component: {fileID: 6166590}
-  m_Layer: 12
+  m_Layer: 10
   m_Name: HealthCollider
   m_TagString: ZombieHealth
   m_Icon: {fileID: 5721338939258241955, guid: 0000000000000000d000000000000000, type: 0}
@@ -34298,7 +34298,10 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   damageCollider: {fileID: 0}
-  fxDead: []
+  fxDead:
+  - {fileID: 178502}
+  - {fileID: 191432}
+  - {fileID: 178502}
   coinCollectable: {fileID: 0}
   health: 10
 --- !u!114 &184799520

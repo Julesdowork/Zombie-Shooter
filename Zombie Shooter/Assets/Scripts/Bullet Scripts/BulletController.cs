@@ -54,4 +54,9 @@ public class BulletController : MonoBehaviour
     {
         direction = dir;
     }
+    
+    public void ExplosionFX()
+    {
+        Instantiate(rocketExplosion, transform.position, Quaternion.identity);
+    }
 }

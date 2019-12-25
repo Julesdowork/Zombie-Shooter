@@ -48,6 +48,28 @@ public class ZombieController : MonoBehaviour
         {
             canAttack = true;
         }
+
+        if (collision.CompareTag(TagManager.BULLET_TAG) || collision.CompareTag(TagManager.ROCKET_MISSILE_TAG))
+        {
+            anim.Hurt();
+
+            health -= collision.GetComponent<BulletController>().damage;
+
+            if (collision.CompareTag(TagManager.ROCKET_MISSILE_TAG))
+            {
+                collision.GetComponent<BulletController>().ExplosionFX();
+            }
+
+            if (health <= 0)
+            {
+                alive = false;
+                anim.Dead();
+
+                StartCoroutine(DeactivateZombie());
+            }
+
+            collision.gameObject.SetActive(false);
+        }
     }
 
     void OnTriggerExit2D(Collider2D collision)
@@ -66,7 +88,7 @@ public class ZombieController : MonoBehaviour
         {
             if (Vector3.Distance(target.position, transform.position) > 1.5f)
             {
-                movement.Move(target);
+                //movement.Move(target);
             }
             else
             {
@@ -75,6 +97,24 @@ public class ZombieController : MonoBehaviour
                     anim.Attack();
                 }
             }
+        }
+    }
+
+    IEnumerator DeactivateZombie()
+    {
+        yield return new WaitForSeconds(2f);
+
+        //Instantiate(coinCollectable, transform.position, Quaternion.identity);
+        gameObject.SetActive(false);
+    }
+
+    public void ActivateDeadEffect(int index)
+    {
+        fxDead[index].SetActive(true);
+
+        if (fxDead[index].GetComponent<ParticleSystem>())
+        {
+            fxDead[index].GetComponent<ParticleSystem>().Play();
         }
     }
 }

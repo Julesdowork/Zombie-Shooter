@@ -94,6 +94,9 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 3c7737c69ffff3e43a8c5229ef6b1c13, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  damage: 0
+  rocketExplosion: {fileID: 1777957916110860, guid: b1038453f36cc41c584473fd83977860,
+    type: 3}
 --- !u!1 &359364064444754303
 GameObject:
   m_ObjectHideFlags: 0

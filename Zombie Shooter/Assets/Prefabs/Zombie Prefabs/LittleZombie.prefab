@@ -20125,7 +20125,7 @@ GameObject:
   m_Component:
   - component: {fileID: 4012156711633930}
   - component: {fileID: 61078667505055502}
-  m_Layer: 12
+  m_Layer: 10
   m_Name: HealthCollider
   m_TagString: ZombieHealth
   m_Icon: {fileID: 5721338939258241955, guid: 0000000000000000d000000000000000, type: 0}
