@@ -332,7 +332,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_Sprite: {fileID: 21300000, guid: df2b3e9849e834b2c8b575140130802a, type: 3}
+  m_Sprite: {fileID: 21300000, guid: 47974e663a40e46bc9110d9f4d2343fc, type: 3}
   m_Type: 0
   m_PreserveAspect: 0
   m_FillCenter: 1
@@ -1607,7 +1607,7 @@ PrefabInstance:
   m_ObjectHideFlags: 0
   serializedVersion: 2
   m_Modification:
-    m_TransformParent: {fileID: 0}
+    m_TransformParent: {fileID: 1735854071}
     m_Modifications:
     - target: {fileID: 4644300839048552234, guid: 21dac362629e77c40b7e76b7dcc8eb29,
         type: 3}
@@ -1627,7 +1627,7 @@ PrefabInstance:
     - target: {fileID: 6082434648366424042, guid: 21dac362629e77c40b7e76b7dcc8eb29,
         type: 3}
       propertyPath: m_IsActive
-      value: 0
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 7009594425596119847, guid: 21dac362629e77c40b7e76b7dcc8eb29,
         type: 3}
@@ -1637,7 +1637,7 @@ PrefabInstance:
     - target: {fileID: 7009594425596119847, guid: 21dac362629e77c40b7e76b7dcc8eb29,
         type: 3}
       propertyPath: m_LocalPosition.y
-      value: -0.30040348
+      value: -3.21
       objectReference: {fileID: 0}
     - target: {fileID: 7009594425596119847, guid: 21dac362629e77c40b7e76b7dcc8eb29,
         type: 3}
@@ -1647,17 +1647,17 @@ PrefabInstance:
     - target: {fileID: 7009594425596119847, guid: 21dac362629e77c40b7e76b7dcc8eb29,
         type: 3}
       propertyPath: m_LocalRotation.x
-      value: 0
+      value: -0
       objectReference: {fileID: 0}
     - target: {fileID: 7009594425596119847, guid: 21dac362629e77c40b7e76b7dcc8eb29,
         type: 3}
       propertyPath: m_LocalRotation.y
-      value: 0
+      value: -0
       objectReference: {fileID: 0}
     - target: {fileID: 7009594425596119847, guid: 21dac362629e77c40b7e76b7dcc8eb29,
         type: 3}
       propertyPath: m_LocalRotation.z
-      value: 0
+      value: -0
       objectReference: {fileID: 0}
     - target: {fileID: 7009594425596119847, guid: 21dac362629e77c40b7e76b7dcc8eb29,
         type: 3}
@@ -1667,7 +1667,7 @@ PrefabInstance:
     - target: {fileID: 7009594425596119847, guid: 21dac362629e77c40b7e76b7dcc8eb29,
         type: 3}
       propertyPath: m_RootOrder
-      value: 11
+      value: 2
       objectReference: {fileID: 0}
     - target: {fileID: 7009594425596119847, guid: 21dac362629e77c40b7e76b7dcc8eb29,
         type: 3}
@@ -1686,6 +1686,12 @@ PrefabInstance:
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 21dac362629e77c40b7e76b7dcc8eb29, type: 3}
+--- !u!4 &280182542 stripped
+Transform:
+  m_CorrespondingSourceObject: {fileID: 7009594425596119847, guid: 21dac362629e77c40b7e76b7dcc8eb29,
+    type: 3}
+  m_PrefabInstance: {fileID: 280182541}
+  m_PrefabAsset: {fileID: 0}
 --- !u!1 &306786872
 GameObject:
   m_ObjectHideFlags: 0
@@ -3403,7 +3409,18 @@ MonoBehaviour:
   m_TargetGraphic: {fileID: 544805217}
   m_OnClick:
     m_PersistentCalls:
-      m_Calls: []
+      m_Calls:
+      - m_Target: {fileID: 567151473}
+        m_MethodName: ResumeGame
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
 --- !u!114 &544805217
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -3553,8 +3570,14 @@ MonoBehaviour:
   rocketMissileCreated: 0
   playerAlive: 0
   fenceDestroyed: 0
+  zombieCount: 20
+  stepCount: 100
+  timer: 100
+  coinCount: 0
   zombieGoal: 1
   gameGoal: 2
+  pausePanel: {fileID: 2083885261}
+  gameOverPanel: {fileID: 178836663}
 --- !u!4 &567151474
 Transform:
   m_ObjectHideFlags: 0
@@ -6125,7 +6148,18 @@ MonoBehaviour:
   m_TargetGraphic: {fileID: 1064895595}
   m_OnClick:
     m_PersistentCalls:
-      m_Calls: []
+      m_Calls:
+      - m_Target: {fileID: 567151473}
+        m_MethodName: PauseGame
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
 --- !u!114 &1064895595
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -6230,7 +6264,7 @@ MonoBehaviour:
     m_HorizontalOverflow: 0
     m_VerticalOverflow: 0
     m_LineSpacing: 1
-  m_Text: Kill All Zombies
+  m_Text: Defend the Fence
 --- !u!222 &1088458685
 CanvasRenderer:
   m_ObjectHideFlags: 0
@@ -6867,7 +6901,7 @@ GameObject:
   - component: {fileID: 1191562383}
   - component: {fileID: 1191562382}
   m_Layer: 5
-  m_Name: Zombie Counter Text
+  m_Name: Timer Counter
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -9688,7 +9722,7 @@ Transform:
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 0}
-  m_RootOrder: 13
+  m_RootOrder: 10
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &1678244734
 GameObject:
@@ -10128,6 +10162,39 @@ SpriteRenderer:
   m_WasSpriteAssigned: 1
   m_MaskInteraction: 0
   m_SpriteSortPoint: 0
+--- !u!1 &1735854070
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 1735854071}
+  m_Layer: 0
+  m_Name: Fence Parent
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &1735854071
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1735854070}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 3.5, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children:
+  - {fileID: 3901987468393799982}
+  - {fileID: 1891618823}
+  - {fileID: 280182542}
+  m_Father: {fileID: 0}
+  m_RootOrder: 11
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &1739031391
 GameObject:
   m_ObjectHideFlags: 0
@@ -11067,7 +11134,7 @@ PrefabInstance:
   m_ObjectHideFlags: 0
   serializedVersion: 2
   m_Modification:
-    m_TransformParent: {fileID: 0}
+    m_TransformParent: {fileID: 1735854071}
     m_Modifications:
     - target: {fileID: 4644300839048552234, guid: 21dac362629e77c40b7e76b7dcc8eb29,
         type: 3}
@@ -11087,7 +11154,7 @@ PrefabInstance:
     - target: {fileID: 6082434648366424042, guid: 21dac362629e77c40b7e76b7dcc8eb29,
         type: 3}
       propertyPath: m_IsActive
-      value: 0
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 7009594425596119847, guid: 21dac362629e77c40b7e76b7dcc8eb29,
         type: 3}
@@ -11097,7 +11164,7 @@ PrefabInstance:
     - target: {fileID: 7009594425596119847, guid: 21dac362629e77c40b7e76b7dcc8eb29,
         type: 3}
       propertyPath: m_LocalPosition.y
-      value: -0.30040348
+      value: -1.8
       objectReference: {fileID: 0}
     - target: {fileID: 7009594425596119847, guid: 21dac362629e77c40b7e76b7dcc8eb29,
         type: 3}
@@ -11107,17 +11174,17 @@ PrefabInstance:
     - target: {fileID: 7009594425596119847, guid: 21dac362629e77c40b7e76b7dcc8eb29,
         type: 3}
       propertyPath: m_LocalRotation.x
-      value: 0
+      value: -0
       objectReference: {fileID: 0}
     - target: {fileID: 7009594425596119847, guid: 21dac362629e77c40b7e76b7dcc8eb29,
         type: 3}
       propertyPath: m_LocalRotation.y
-      value: 0
+      value: -0
       objectReference: {fileID: 0}
     - target: {fileID: 7009594425596119847, guid: 21dac362629e77c40b7e76b7dcc8eb29,
         type: 3}
       propertyPath: m_LocalRotation.z
-      value: 0
+      value: -0
       objectReference: {fileID: 0}
     - target: {fileID: 7009594425596119847, guid: 21dac362629e77c40b7e76b7dcc8eb29,
         type: 3}
@@ -11127,7 +11194,7 @@ PrefabInstance:
     - target: {fileID: 7009594425596119847, guid: 21dac362629e77c40b7e76b7dcc8eb29,
         type: 3}
       propertyPath: m_RootOrder
-      value: 10
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 7009594425596119847, guid: 21dac362629e77c40b7e76b7dcc8eb29,
         type: 3}
@@ -11146,6 +11213,12 @@ PrefabInstance:
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 21dac362629e77c40b7e76b7dcc8eb29, type: 3}
+--- !u!4 &1891618823 stripped
+Transform:
+  m_CorrespondingSourceObject: {fileID: 7009594425596119847, guid: 21dac362629e77c40b7e76b7dcc8eb29,
+    type: 3}
+  m_PrefabInstance: {fileID: 1891618822}
+  m_PrefabAsset: {fileID: 0}
 --- !u!1 &1927346591
 GameObject:
   m_ObjectHideFlags: 0
@@ -11552,7 +11625,7 @@ RectTransform:
   - {fileID: 2083885262}
   - {fileID: 178836664}
   m_Father: {fileID: 0}
-  m_RootOrder: 12
+  m_RootOrder: 9
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 0}
   m_AnchorMax: {x: 0, y: 0}
@@ -11651,7 +11724,7 @@ GameObject:
   - component: {fileID: 1996632081}
   - component: {fileID: 1996632080}
   m_Layer: 5
-  m_Name: Zombie Icon
+  m_Name: Clock Icon
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -11694,7 +11767,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_Sprite: {fileID: 21300000, guid: df2b3e9849e834b2c8b575140130802a, type: 3}
+  m_Sprite: {fileID: 21300000, guid: 7525b0403fccb4c3e9ea99814794dacf, type: 3}
   m_Type: 0
   m_PreserveAspect: 0
   m_FillCenter: 1
@@ -12537,7 +12610,7 @@ PrefabInstance:
   m_ObjectHideFlags: 0
   serializedVersion: 2
   m_Modification:
-    m_TransformParent: {fileID: 0}
+    m_TransformParent: {fileID: 1735854071}
     m_Modifications:
     - target: {fileID: 4644300839048552234, guid: 21dac362629e77c40b7e76b7dcc8eb29,
         type: 3}
@@ -12557,7 +12630,7 @@ PrefabInstance:
     - target: {fileID: 6082434648366424042, guid: 21dac362629e77c40b7e76b7dcc8eb29,
         type: 3}
       propertyPath: m_IsActive
-      value: 0
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 7009594425596119847, guid: 21dac362629e77c40b7e76b7dcc8eb29,
         type: 3}
@@ -12577,17 +12650,17 @@ PrefabInstance:
     - target: {fileID: 7009594425596119847, guid: 21dac362629e77c40b7e76b7dcc8eb29,
         type: 3}
       propertyPath: m_LocalRotation.x
-      value: 0
+      value: -0
       objectReference: {fileID: 0}
     - target: {fileID: 7009594425596119847, guid: 21dac362629e77c40b7e76b7dcc8eb29,
         type: 3}
       propertyPath: m_LocalRotation.y
-      value: 0
+      value: -0
       objectReference: {fileID: 0}
     - target: {fileID: 7009594425596119847, guid: 21dac362629e77c40b7e76b7dcc8eb29,
         type: 3}
       propertyPath: m_LocalRotation.z
-      value: 0
+      value: -0
       objectReference: {fileID: 0}
     - target: {fileID: 7009594425596119847, guid: 21dac362629e77c40b7e76b7dcc8eb29,
         type: 3}
@@ -12597,7 +12670,7 @@ PrefabInstance:
     - target: {fileID: 7009594425596119847, guid: 21dac362629e77c40b7e76b7dcc8eb29,
         type: 3}
       propertyPath: m_RootOrder
-      value: 9
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 7009594425596119847, guid: 21dac362629e77c40b7e76b7dcc8eb29,
         type: 3}
@@ -12616,6 +12689,12 @@ PrefabInstance:
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 21dac362629e77c40b7e76b7dcc8eb29, type: 3}
+--- !u!4 &3901987468393799982 stripped
+Transform:
+  m_CorrespondingSourceObject: {fileID: 7009594425596119847, guid: 21dac362629e77c40b7e76b7dcc8eb29,
+    type: 3}
+  m_PrefabInstance: {fileID: 3901987468393799981}
+  m_PrefabAsset: {fileID: 0}
 --- !u!1001 &8012292439369864897
 PrefabInstance:
   m_ObjectHideFlags: 0
