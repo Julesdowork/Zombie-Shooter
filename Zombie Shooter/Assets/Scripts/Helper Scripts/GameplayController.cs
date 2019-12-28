@@ -1,5 +1,6 @@
 ﻿using UnityEngine;
 using UnityEngine.UI;
+using UnityEngine.SceneManagement;
 
 public enum ZombieGoal
 {
@@ -163,5 +164,10 @@ public class GameplayController : MonoBehaviour
         }
 
         stepCountText.text = stepCount.ToString();
+    }
+
+    public void QuitGame()
+    {
+        SceneManager.LoadScene(TagManager.MAIN_MENU_NAME);
     }
 }
